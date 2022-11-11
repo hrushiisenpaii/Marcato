@@ -1,15 +1,17 @@
 import './App.css';
 import React from "react";
 import Header from './Header';
+import Home from "./Home";
 
  
 function App() {
   return (
     
     <div className="app">
-      <h1>Hello Marcato's developers 👽☠️  </h1>
+     
       {/* HEADER */}
       <Header />
+      <Home />
       {/* HOME */}
     </div>
   );
