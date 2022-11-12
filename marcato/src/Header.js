@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
 
-import logo from './images/marcologo.png';
+import logo from './images/MARCATO.png';
 import search from './images/search.svg';
-import cart from './images/kart.png';
+import cart from './images/cart.svg';
 
 function Header() {
   return (
@@ -39,12 +39,15 @@ function Header() {
             <span className="header_optionLineTwo"> Membership </span>
                  </div>
 
-        <div className='header_basket '>
-          <img src={cart} alt="cart" />
-          <span className="header_optionLineTwo">Cart</span>
-          <span className="header_optionLineOne">0</span>
+            <img className='header_basket' src={cart} alt="cart" />
+
+             <div className='header_option '>
+             <span className="header_optionLineOne">0</span>
+             <span className="header_optionLineTwo">Cart</span>
+             </div>
+         
           
-        </div>
+       
 
       </div>
 
