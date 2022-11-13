@@ -6,7 +6,7 @@ function Checkout() {
   return (
     <div className='checkout'>
        <div className='checkout__left'>
-        <img className='checkout__ad' src= "https://cdn.imgbin.com/12/8/15/imgbin-vehicle-license-plates-logo-car-product-design-automotive-design-car-n2GJYWe30KpA8VuGi0eFiCPBN.jpg" alt="modi ji ka ad h maadrchod"/>
+        <img className='checkout__ad' src= "" alt=""/>
 
     <div>
        <h2 className="checkout__title"> 
