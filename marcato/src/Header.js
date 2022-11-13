@@ -4,13 +4,15 @@ import './Header.css';
 import logo from './images/MARCATO.png';
 import search from './images/search.svg';
 import cart from './images/cart.svg';
+//import{ Link } from "react-router-dom";
 
 function Header() {
   return (
     <div  className='header'>
-
-        <img className="header_logo" src={logo} alt="logo"/>
- 
+      
+        <a href='/'>  
+       <img className="header_logo" src={logo} alt="logo"/>
+        </a>
         <div
             className="header_search">
                 <input 
