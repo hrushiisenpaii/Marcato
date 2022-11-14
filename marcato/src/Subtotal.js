@@ -3,6 +3,7 @@ import "./Subtotal.css";
 import CurrencyFormat from "react-currency-format";
 import {useStateValue} from "./StateProvider";
 import {getBasketTotal} from "./reducer";
+i
 
 
 function Subtotal() {
