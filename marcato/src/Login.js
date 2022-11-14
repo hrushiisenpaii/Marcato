@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { auth } from "./firebase";
 import './Login.css';
 
 import logo from './images/MARCATO.png';
@@ -10,11 +11,21 @@ function Login() {
 
    const signIn = e => {
     e.preventDefault();
-
+    
+    //...
 }
     
     const register = e => {
     e.preventDefault();
+
+    //...
+    auth
+    .createUserWithEmailAndPassword(email, password)
+    .then((auth) => {
+        // it successfully created a new user with email and password
+       console.log(auth);
+    })
+    .catch(error => alert(error.message))
 
 }    
 

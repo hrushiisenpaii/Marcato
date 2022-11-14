@@ -4,6 +4,7 @@ import logo from './images/MARCATO.png';
 import search from './images/search.svg';
 import cart from './images/cart.svg';
 import { useStateValue } from "./StateProvider";
+import { Link } from "react-router-dom";
 
 function Header() {
   
@@ -51,14 +52,15 @@ function Header() {
                  </div>
      
 
-            <a href='/Checkout'>
+            <Link to ='/Checkout'>
             <img className='header_basket' src={cart} alt="cart" />
-            </a>
+            </Link>
              <div className='header_option '>
              <span className="header_optionLineOne header__basketCount">{basket.length}</span>
              <span className="header_optionLineTwo">Cart</span>
             
              </div>
+             
      
       </div>
        

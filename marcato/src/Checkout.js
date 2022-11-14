@@ -6,6 +6,7 @@ import CheckoutProduct from "./CheckoutProduct";
 
 function Checkout() {
   const[{basket},dispatch]=useStateValue();
+  
   return (
     <div className='checkout'>
        <div className='checkout__left'>
