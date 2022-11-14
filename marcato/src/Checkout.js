@@ -6,9 +6,10 @@ function Checkout() {
   return (
     <div className='checkout'>
        <div className='checkout__left'>
-        <img className='checkout__ad' src= "" alt=""/>
+        <img className='checkout__ad' src= "https://imgsrc.cineserie.com/2020/12/narcos-secrets-de-serie.jpg?ver=1" alt=""/>
 
     <div>
+      
        <h2 className="checkout__title"> 
         Your Shopping Basket</h2>
 
