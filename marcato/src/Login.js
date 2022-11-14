@@ -8,6 +8,16 @@ function Login() {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
 
+   const signIn = e => {
+    e.preventDefault();
+
+}
+    
+    const register = e => {
+    e.preventDefault();
+
+}    
+
   return (
     <div className='login'>
 
@@ -29,12 +39,12 @@ function Login() {
                  onChange={e => setPassword(e.target.value)} 
                 />
 
-                <button className='login_signinbutton'>Sign-In</button>
+                <button type='submit' onClick={signIn} className='login_signinbutton'>Sign-In</button>
             </form>
 
             <p> terms</p>
 
-            <button className='login_registrationbutton'>Create you new account.</button>
+            <button onClick={register} className='login_registrationbutton'>Create you new account.</button>
 
          </div>
 
