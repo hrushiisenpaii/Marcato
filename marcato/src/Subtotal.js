@@ -20,7 +20,7 @@ function Subtotal() {
         value={0}
         displayType={"text"}
         thousandSeprator={true}
-        prefix={"£"}
+        prefix={"₹"}
         />
         
     </div>
