@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header.css';
-
 import logo from './images/MARCATO.png';
 import search from './images/search.svg';
 import cart from './images/cart.svg';
-//import{ Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  
+ const[{basket}, dispatch] = useStateValue(  );
+
   return (
     <div  className='header'>
       
@@ -47,20 +49,18 @@ function Header() {
             <span className="header_optionLineOne"> Your </span>
             <span className="header_optionLineTwo"> Membership </span>
                  </div>
+     
 
+            <a href='/Checkout'>
             <img className='header_basket' src={cart} alt="cart" />
-
+            </a>
              <div className='header_option '>
-             <span className="header_optionLineOne">0</span>
+             <span className="header_optionLineOne header__basketCount">{basket.length}</span>
              <span className="header_optionLineTwo">Cart</span>
+            
              </div>
-         
-          
-       
-
+     
       </div>
-
-
        
     </div>
   )
