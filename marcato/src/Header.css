@@ -43,8 +43,13 @@
     display: flex;
     justify-content: space-evenly;
     column-gap: 10px;
-    
 }
+
+.header_nav a{
+    color: white;
+    text-decoration: none;
+}
+
 .header_optionLineOne{
     padding-bottom: 1px;
     font-size: 14px;
